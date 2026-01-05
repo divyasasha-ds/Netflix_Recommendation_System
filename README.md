@@ -1,86 +1,93 @@
-📌 Project Overview
 
-This project is a Netflix Movie Recommendation System built using Machine Learning (KNN) and Deep Learning (Autoencoder).
-The goal of this project is to understand how recommendation systems work and to compare ML and DL models based on performance.
+# 🎬 Netflix Recommendation System
 
-🚀 Technologies Used
+## 📌 Project Overview
+This project is a Netflix Movie Recommendation System developed using Machine Learning (KNN) and Deep Learning (Autoencoder).  
+The objective is to understand how recommendation systems work and to compare ML and DL models based on performance metrics.
 
-Python
 
-Pandas
+---
 
-NumPy
+## 🚀 Technologies Used
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- TensorFlow / Keras  
+- Matplotlib  
 
-Scikit-learn
+---
 
-TensorFlow / Keras
+## 📊 Dataset Information
+- Dataset size: 500 rows  
+- Dataset type: Self-created (not taken from Google or Kaggle)  
+- Number of users: 99  
+- Number of movies: 50  
 
-Matplotlib
+### Columns
+- UserID  
+- MovieID  
+- Rating (1–5)  
+- Genre  
+- ReleaseYear  
+- Timestamp  
 
-📊 Dataset Information
+---
 
-Dataset size: 500 rows
+## 🧠 Models Implemented
 
-Dataset: Self-created (not from Google or Kaggle)
+### Machine Learning
+- K-Nearest Neighbors (KNN)
+- Collaborative Filtering
 
-Number of users: 99
+### Deep Learning
+- Autoencoder Neural Network
 
-Number of movies: 50
+---
 
-Columns:
+## 📈 Model Performance
 
-UserID
+| Model | RMSE | Training Time |
+|------|------|---------------|
+| ML (KNN) | 3.2278 | 0.20 sec |
+| DL (Autoencoder) | 3.2752 | 5.45 sec |
 
-MovieID
+---
 
-Rating (1–5)
+## 🖥 Sample Output
 
-Genre
+- Dataset loaded successfully  
+- Shape: (500, 6)  
+- Users: 99  
+- Movies: 50  
 
-ReleaseYear
+### Top-5 Movie Recommendations
 
-Timestamp
+**ML (KNN)**
+- User 1: [38, 43, 20, 30, 42]  
+- User 2: [44, 25, 37, 10, 18]  
+- User 3: [4, 15, 25, 8, 36]  
 
-🧠 Models Used
-Machine Learning
+**DL (Autoencoder)**
+- User 1: [43, 35, 24, 38, 23]  
+- User 2: [25, 44, 37, 10, 32]  
+- User 3: [4, 15, 25, 5, 48]  
 
-K-Nearest Neighbors (KNN)
+---
 
-Collaborative Filtering
+## 🎯 Key Features
+- Netflix-style recommendation system  
+- ML vs DL comparison  
+- RMSE evaluation  
+- Training time comparison  
+- Top-N movie recommendations  
+- Genre-based analysis  
+- Data visualization
 
-Deep Learning
+---
 
-Autoencoder Neural Network
+## ▶️ How to Run the Project
 
-📈 Model Performance
-Model	RMSE	Training Time
-ML (KNN)	~3.22	~0.17 sec
-DL (Autoencoder)	~3.25	~4.02 sec
-🎯 Key Features
-
-Movie recommendation system
-
-ML vs DL comparison
-
-RMSE evaluation
-
-Training time comparison
-
-Top-N movie recommendations
-
-Genre-based analysis
-
-Data visualization
-
-▶️ How to Run
+```bash
 pip install -r requirements.txt
 python Netflix_Recommendation_System.py
-
-👩‍💻 Author
-
-C. Divya Sasha
-BSc Computer Science (2025)
-
-⭐ Conclusion
-
-This project helps understand real-world recommendation systems and the difference between Machine Learning and Deep Learning.
